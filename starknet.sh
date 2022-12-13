@@ -16,13 +16,12 @@ fi
 echo -e "\e[1m\e[32m3. Installing binaries.. \e[0m"
 echo "======================================================"
 latest=$(curl -s https://api.github.com/repos/eqlabs/pathfinder/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
-
+echo -e "\e[1m\e[32m3. Installing latest version $latest \e[0m"
 if [[ -d "$SH/$DIRECTORY" ]]; then
     echo "$DIRECTORY exists"
     # shellcheck disable=SC2164
     cd "$SH/$DIRECTORY"
-    git checkout main
-    git pull
+    git fetch
     git checkout $latest
 else
     echo "$DIRECTORY does NOT exists"
