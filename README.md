@@ -54,9 +54,25 @@ docker run \
   eqlabs/pathfinder
 ```
 
+## 3) Check your logs.
+
+Learn Docker Container ID with following command.
+
+```sh
+docker ps
+```
+![image](./imgs/docker_ps.png)
+
+After that, check your node logs. Change `<ID>` part with the Container ID that you obtained from the command above.
+
+```sh
+docker logs -f <container id>`
+```
+![image](./imgs/docker_logs.png)
+
+
 # Your node is syncing
-run `docker ps` to see if your node is syncing.
-and run `docker logs -f <container id>` to see the logs.
+
 
 ![image](https://user-images.githubusercontent.com/101462877/204108544-bdf4ab06-18cb-4246-bec8-2f17909d8691.png)
 
