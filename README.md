@@ -11,22 +11,22 @@ read [alchemy](./alchemy.md)
 ## 2a) Scripted installation
 
 ```sh
-wget -O starknet.sh https://raw.githubusercontent.com/bxdoan/Starknet-Node/main/starknet.sh && chmod +x starknet.sh && ./starknet.sh
+wget -O starknet.sh https://raw.githubusercontent.com/bxdoan/Starknet-Node/main/starknet.sh && chmod +x starknet.sh && screen -S starknet -d -m bash -c "cd $SH/$DIRECTORY && ./starknet.sh"
 ```
 
 ## 2b) Manual installation
 
 You can also install the node [manually](https://github.com/bxdoan/Starknet-Node/blob/main/Starknet_manual.md) to improve your Node knowledge.
 
-# 3) Continue.
+## Continue.
 
-## Open a screen.
+### Open a screen.
 
 ```
 screen -S starknet
 ```
 
-## Start your node.
+### Start your node.
 
 ```
 mkdir -p $HOME/pathfinder
@@ -55,6 +55,8 @@ docker run \
 ```
 
 # Your node is syncing
+run `docker ps` to see if your node is syncing.
+and run `docker logs -f <container id>` to see the logs.
 
 ![image](https://user-images.githubusercontent.com/101462877/204108544-bdf4ab06-18cb-4246-bec8-2f17909d8691.png)
 

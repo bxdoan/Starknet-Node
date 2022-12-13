@@ -33,7 +33,7 @@ get latest release
 curl -s https://api.github.com/repos/eqlabs/pathfinder/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")'
 ```
 
-install binaries from lastest release above command:
+install binaries from latest release above command:
 ```shell
 ```sh
 git clone --branch <latest> https://github.com/eqlabs/pathfinder.git
