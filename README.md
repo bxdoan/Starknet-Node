@@ -4,7 +4,7 @@ Starknet Full Node
 
 # 1) Before installing node, get your endpoint from Alchemy.
 
-read [alchemy](https://raw.githubusercontent.com/bxdoan/Starknet-Node/main/alchemy.md)
+read [alchemy](./alchemy.md)
 
 # 2) Install the node.
 
