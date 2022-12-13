@@ -16,7 +16,7 @@ wget -O starknet.sh https://raw.githubusercontent.com/bxdoan/Starknet-Node/main/
 
 ## 2b) Manual installation
 
-You can also install the node [manually](https://github.com/bxdoan/Stark-Node/blob/main/Starknet_manual.md) to improve your Node knowledge.
+You can also install the node [manually](https://github.com/bxdoan/Starknet-Node/blob/main/Starknet_manual.md) to improve your Node knowledge.
 
 # 3) Continue.
 
