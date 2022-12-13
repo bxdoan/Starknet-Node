@@ -15,7 +15,7 @@ fi
 
 echo -e "\e[1m\e[32m3. Installing binaries.. \e[0m"
 echo "======================================================"
-lastest=$(curl -s https://api.github.com/repos/eqlabs/pathfinder/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
+latest=$(curl -s https://api.github.com/repos/eqlabs/pathfinder/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
 
 if [[ -d "$SH/$DIRECTORY" ]]; then
     echo "$DIRECTORY exists"
@@ -23,10 +23,10 @@ if [[ -d "$SH/$DIRECTORY" ]]; then
     cd "$SH/$DIRECTORY"
     git checkout main
     git pull
-    git checkout $lastest
+    git checkout $latest
 else
     echo "$DIRECTORY does NOT exists"
-    git clone --branch $lastest https://github.com/eqlabs/pathfinder.git
+    git clone --branch $latest https://github.com/eqlabs/pathfinder.git
 fi
 
 mkdir -p $HOME/pathfinder
