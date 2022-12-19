@@ -77,3 +77,8 @@ docker logs -f <container id>`
 ![image](https://user-images.githubusercontent.com/101462877/204108544-bdf4ab06-18cb-4246-bec8-2f17909d8691.png)
 
 
+## Contact
+If you have any questions, please contact me at [Telegram](https://t.me/bxdoan)
+
+## Thanks for use
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/bxdoan)
