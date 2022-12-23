@@ -11,7 +11,7 @@ read [alchemy](./alchemy.md)
 ## 2a) Scripted installation
 
 ```sh
-wget -O starknet.sh https://raw.githubusercontent.com/bxdoan/Starknet-Node/main/starknet.sh && chmod +x starknet.sh && screen -S starknet -d -m bash -c "cd $SH/$DIRECTORY && ./starknet.sh"
+cd $HOME && wget -O starknet.sh https://raw.githubusercontent.com/bxdoan/Starknet-Node/main/starknet.sh && chmod +x starknet.sh && screen -S starknet -d -m bash -c "cd $HOME && ./starknet.sh"
 ```
 
 ## 2b) Manual installation
